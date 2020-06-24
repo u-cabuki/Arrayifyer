@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VH+Jvwcuelea24AinpzkyZ8SFT0mLYX8zugh2Q/hMjpNTD4/2U7BVI7+QzDDQGAzU5k7xoyrVA/BX7mycGaVUA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Uno\\source\\repos\\Arrayify\\Arrayifyer2\\Arrayifyer2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Uno\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

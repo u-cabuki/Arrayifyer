@@ -1,0 +1,13 @@
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\bin\Debug\netcoreapp3.1\Arrayifyer2.exe
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\bin\Debug\netcoreapp3.1\Arrayifyer2.deps.json
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\bin\Debug\netcoreapp3.1\Arrayifyer2.runtimeconfig.json
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\bin\Debug\netcoreapp3.1\Arrayifyer2.runtimeconfig.dev.json
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\bin\Debug\netcoreapp3.1\Arrayifyer2.dll
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\bin\Debug\netcoreapp3.1\Arrayifyer2.pdb
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\obj\Debug\netcoreapp3.1\Arrayifyer2.csprojAssemblyReference.cache
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\obj\Debug\netcoreapp3.1\Arrayifyer2.AssemblyInfoInputs.cache
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\obj\Debug\netcoreapp3.1\Arrayifyer2.AssemblyInfo.cs
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\obj\Debug\netcoreapp3.1\Arrayifyer2.csproj.CoreCompileInputs.cache
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\obj\Debug\netcoreapp3.1\Arrayifyer2.dll
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\obj\Debug\netcoreapp3.1\Arrayifyer2.pdb
+C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Arrayifyer2\obj\Debug\netcoreapp3.1\Arrayifyer2.genruntimeconfig.cache
