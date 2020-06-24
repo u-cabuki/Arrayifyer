@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Arrayifyer2
@@ -10,26 +11,36 @@ namespace Arrayifyer2
         {
             try
             {
-                var filePath = @"C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\JSON";
+                var completeFile = string.Empty;
+                var filePath = @"C:\Users\Uno\Desktop\Test";
                 foreach (var file in
                     Directory.GetFiles(filePath, "*.json"))
                 {
-                        using (StreamReader sr = new StreamReader(file))
+                    using (StreamReader sr = new StreamReader(file))
                     {
-                        String line = sr.ReadToEnd();
-                        line = Regex.Replace(line, @"\n\n", ",\n");
-                        int index = line.LastIndexOf("}");
-                        if (index > 0)
-                            line = line.Substring(0, index);
-                        line = line.Insert(0, "[\n");
-                        line = line.Insert(line.Length, "\n]");
-                        string docPath =
-                        @"C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Fixed Files";
-                        var newFile = file.Replace(filePath + @"\", "");
-                        using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, newFile)))
+                        String line = sr.ReadLine();
+                        if (line.Substring(0, 1) != "{")
                         {
-                            outputFile.WriteLine(line);
+                            break;
                         }
+                        var countLeft = line.TakeWhile(c => c == '{').Count();
+                        var countRight = line.TakeWhile(c => c == '}').Count();
+                        while (countLeft > countRight)
+                        {
+                            line += sr.ReadLine();
+                        }
+                        completeFile += line + ",\n";
+                    }
+                    int index = completeFile.LastIndexOf(",");
+                    if (index > 0)
+                        completeFile = completeFile.Substring(0, index);
+                    completeFile = "[" + completeFile + "]";
+                    string docPath =
+                    @"C:\Users\Uno\Desktop\Community Chest\MSc Psych\Dissertation\Our Planet Data\Fixed Files";
+                    var newFile = file.Replace(filePath + @"\", "");
+                    using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, newFile)))
+                    {
+                        outputFile.WriteLine(completeFile);
                     }
                 }
             }
