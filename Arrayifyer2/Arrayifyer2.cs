@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -18,18 +18,25 @@ namespace Arrayifyer2
                 {
                     using (StreamReader sr = new StreamReader(file))
                     {
-                        String line = sr.ReadLine();
-                        if (line.Substring(0, 1) != "{")
+                        while (!sr.EndOfStream)
                         {
-                            break;
+                            String line = sr.ReadLine();
+                            if (!string.IsNullOrEmpty(line))
+                            {
+                                if (line.Substring(0, 1) == "{")
+                                {
+                                    var countLeft = line.ToCharArray().Count(c => c == '{');
+                                    var countRight = line.ToCharArray().Count(c => c == '}');
+                                    while (countLeft > countRight)
+                                    {
+                                        completeFile += line;
+                                        line = sr.ReadLine();
+                                        countRight += line.TakeWhile(c => c == '}').Count();
+                                    }
+                                    completeFile += line + ",\n";
+                                }
+                            }
                         }
-                        var countLeft = line.TakeWhile(c => c == '{').Count();
-                        var countRight = line.TakeWhile(c => c == '}').Count();
-                        while (countLeft > countRight)
-                        {
-                            line += sr.ReadLine();
-                        }
-                        completeFile += line + ",\n";
                     }
                     int index = completeFile.LastIndexOf(",");
                     if (index > 0)
