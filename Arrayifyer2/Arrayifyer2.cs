@@ -31,7 +31,7 @@ namespace Arrayifyer2
                                     {
                                         completeFile += line;
                                         line = sr.ReadLine();
-                                        countRight += line.TakeWhile(c => c == '}').Count();
+                                        countRight = line.ToCharArray().Count(c => c == '}');
                                     }
                                     completeFile += line + ",\n";
                                 }
