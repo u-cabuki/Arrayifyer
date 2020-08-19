@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace File_Arrayifyer
+namespace Arrayifyer2
 {
     class Program
     {
